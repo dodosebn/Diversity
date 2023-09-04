@@ -1,0 +1,462 @@
+/*for the entire body*/
+*{
+    box-sizing:border-box;
+     margin:0;
+     padding:0;
+}
+body{
+  font-family: 'Arial', sans-serif, monospace;
+  background-image: url('https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80');
+width: 1380px;
+max-width: 1920px;
+margin: auto;
+overflow-x: hidden;
+overflow-y: scroll;
+background-size: cover;
+}/*it ends here*/
+
+
+/*Here is everything for the menu side*/
+.logo h1{
+    text-transform: capitalize;
+    font-size: 44px;
+    cursor:pointer;
+  }
+  .fa-dollar-sign{
+   color:rgb(255,94,0);
+   font-size: 44px;
+  }
+  
+    nav{
+      background: #000;
+      color:#fff;
+      display:flex;
+      justify-content: space-between;
+    }
+  
+    nav .menubar{
+      list-style: none;
+      color: #fff;
+      display: inline-flex;
+      }
+      
+      nav .menubar li{
+          display:block ;
+          padding: 13px;
+          font-size: 19px;
+      }
+      
+      nav .menubar li a{
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+      }
+  
+      nav .menubar li a:hover{
+        background: rgb(94, 76, 65);
+  
+      }
+  
+      nav .openmenu{
+        font-size: 2rem;
+        margin: 20px;
+        cursor: pointer;
+        display:block;
+      }
+  .fa-bars{
+    font-size:44px;
+  }
+    
+  
+       nav .menubar .closemenu,  .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+       }
+  
+       .fa-facebook:hover{color:rgb(0,110,255);}
+       .fa-instagram:hover{color:rgb(86,154,243);}
+       .fa-twitter:hover{color:rgb(245, 243, 244);}
+       .fa-github:hover{color:rgb(255,123,0);}
+  
+      .fa-house{color:#800080;}
+      .fa-phone{color:#800080;}
+      .fa-users{color:#800080;}
+      .fa-user{color:#800080;}
+  
+  
+       nav.logo{
+        margin:6px;
+        font-size: 25px;
+        cursor:pointer;
+       }
+
+/*For The popups*/
+/*The first (accept and preview cookies*/
+.popup{
+  background: #fff;
+  width: 38%;
+  position: relative;
+  left: 26rem;
+  top:9rem;
+  padding: 16px;
+  align-items: center;
+  font-size: 12px;
+  display: none;
+}
+.popup h2{
+    margin-left: 18px;
+    font-family: sans-serif;
+}
+
+.popup input{
+  color:#000000;
+         background-color: rgb(255,94,0);
+         width:100px;
+         font-size: 16px;
+         left:6rem;
+         top:0.5rem;
+         position: relative;
+}
+.popup input:hover{
+ background-color: #800080;
+}
+.view input{
+    color:#000000;
+    background-color: #800080;
+    width:180px;
+    font-size: 16px;
+    left:10rem;
+         position: relative;
+
+}
+.view input:hover{
+    background:rgb(255,94,0);
+}/*The first ends here*/
+
+/*Here comes the second one once prefrence cookies is clicked*/
+.clickview{
+background-color: #fff;
+width: 50%;
+border-radius: 2rem;
+height: 760px;
+position: relative;
+left: 20rem;
+bottom: 7rem;
+display:none;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.viewing1{
+padding:10px;
+position: relative;
+left:1.5rem;
+border-block-end-style: ridge;
+width:650px;
+font-size: 14px;
+}
+.viewing1 h2{
+    align-items: center;
+    position:relative;
+    left:0rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.viewing1 input{
+    color:#000000;
+    background-color:rgb(255,94,0);
+    padding: 10px;
+    font-size: 16px;
+  margin-top: 5px;
+}
+.viewing1 input:hover{
+background: #800080;
+}
+.reject input{
+    padding: 10px;
+   font-size: 16px;
+    left:9rem;
+    text-transform: capitalize;
+    color:#000;
+    background-color: #800080;
+}
+.reject input:hover{
+    background-color: rgb(255,94,0);
+}
+
+.viewing2{
+    padding:10px;
+    position: relative;
+    left:1.5rem;
+    border-block-end-style: ridge;
+    width:650px;
+    font-size: 14.3px;
+    }
+    .viewing1 h2{
+        align-items: center;
+        position:relative;
+        left:0rem;
+        text-transform: capitalize;
+        font-family: sans-serif;
+    }
+
+.viewing3{
+    padding:10px;
+    position: relative;
+    left:1.5rem;
+    border-block-end-style: ridge;
+    width:650px;
+    font-size: 14.3px; 
+}
+.viewing3 h2{
+    align-items: center;
+    position:relative;
+    left:0rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}/*it ends here*/
+
+/*This is for the signup form*/
+     .signupform{
+      align-content: center;
+      position: relative;
+      left: 940px;
+      display: none;
+     }
+.shoutdown{
+  font-size: 44px;
+  position: relative;
+  left:1300px;
+  display: none;
+}
+     .signupform input{
+      border: none;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+      font-size: 18px;
+      color: #333;
+      border:none;
+      border-radius: 7px;
+      height: 45px;
+      max-width: 400px;
+      width: 40%;
+      padding: 10px 20px;
+      justify-content: center;
+     }
+     .signupform label{
+      color:#000000;
+      font-size: 20px;
+      font-weight: 400;
+     }
+     .sbutton input{
+         color:#000000;
+         background-color: tomato;
+         width:100px;
+         font-size: 22px;
+         height: 40px;
+        position: relative;
+        left: 18.5rem;
+        top:1rem;
+     }
+     .sbutton input:hover{
+         background-color: #800080;
+         color: #000000;
+     }
+     .shutup{
+      font-size: 44px;
+      position: relative;
+      left:1215px;
+      display: none;
+     }
+     /*it ends here signupform*/
+
+     /*for the login form*/
+     .loginform input{
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+      color: #333;
+      border:none;
+      border-radius: 7px;
+      height: 45px;
+      width:20%;
+      padding:  10px 20px;
+      justify-content: center;
+     }
+     .loginform{
+      align-content: center;
+      position: relative;
+      left: 1000px;
+      display:none;
+     }
+     .loginform label{
+      color:#000000;
+      font-size: 20px;
+      font-weight: 400;
+     }
+     .button input{
+      color:#000000;
+      background-color: tomato;
+      width:100px;
+      font-size: 22px;
+      height: 40px;
+     position: relative;
+     left: 10.5rem;
+     top:1rem;
+  }
+  .button input:hover{
+      background-color: #800080;
+      color: #000000;
+  }
+/*login form ends here*/
+
+/*The next page */
+.afterbtn{
+    display: none;
+}
+  .upnext{
+    display:flex;
+    }
+    .utitle{
+        color: #000000;
+        text-transform: capitalize;
+        position: relative;
+        bottom:0rem ;
+        left: 4rem;
+        cursor: pointer;
+    }
+    .utitle span{
+        color: #800080;
+        position: relative;
+        top: 0rem;
+        left: 2rem;
+        cursor: pointer;
+    }
+    .utitle h1{
+        font-size: 70px;
+        display: flex;
+    }
+    /*THIS THE MOTTO THE ONE SPINNING ROUND*/
+    .motto{
+        color: #000000;
+        position: relative;
+        top:0;
+        right: 43rem;
+        cursor: pointer;
+    }
+        .motto{
+            rotate: 0deg;
+           transition: all 0.5s ease;
+            color: black;
+            display: inline-block;
+        }
+        .motto:hover {
+            rotate:360deg;
+            transition: rotate 1s;
+            color: #ff0000;
+            padding: 20px;
+        }
+    .motto h3{
+        color: #000000;
+        position: relative;
+        top: 9rem;
+        right:15rem;
+        cursor: pointer;
+    }
+    .motto h4{
+        color: #800080;
+        position: relative;
+        top: 7.8rem;
+        right:10rem;
+        cursor: pointer;
+        width: 300px;
+        display: flex;
+    }
+    /*DIV OF THE IMAGE SEARCH*/
+    .post-body{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Poppins', sans-serif;;
+    line-height: 1.6;
+    
+    }
+    .post-body h1{
+        font-size: 46px;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        top:7rem;
+        left: 4rem;
+    }
+    .post-body form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top:8rem;
+    }
+    .post-body #search-input{
+        width: 60%;
+        max-width: 400px;
+        padding: 10px 20px;
+        border: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        font-size: 18px;
+        color: #333;
+    }
+    /*Ma this is actually for the image searching stuff i wanted to create an image search inside*/
+    .post-body #search-button{
+        padding: 10px 20px;
+        background-color: #138065;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+        
+    }
+     .search-results{
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin:0 auto;
+        Display: flex;
+        Flex-direction: row;
+        Gap: 70px;  
+    }
+    .search-result{
+        position: relative;
+        top:160px;
+        margin-bottom: 60px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    }
+    .search-result img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.2s ease-in-out;
+    }
+    .search-result:hover img{
+        opacity: 0.8;
+    }
+    .search-result a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+        text-transform: capitalize;
+    }

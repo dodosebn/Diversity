@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOREMONEY</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexx.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\user\Downloads\news-homepage-main\news-homepage-main\assets\images\icon-menu-close.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onload="showpopup();">
+    <!--This is for the upper size-->
+        <nav id="first">
+            <div class="logo"><h1><i class="fa-solid fa-dollar-sign"></i>DIVERSITY</h1></div>
+        <div class="openmenu" id="openmenu"><i class="fa-solid fa-bars"></i></div>
+    <ul class="menubar">
+        <li><a href="#"  onclick="alert('Still under Development...dont be offended')"><i class="fa-solid fa-house"></i>HOME</a></li>
+        <li><a href="#"  onclick="alert('Still under Development...dont be offended')"><i class="fa-solid fa-phone"></i>CONTACT US</a></li>
+        <span class="logg"><li><a href="#"><i class="fa fa-user"></i>Log In</a></li></span>
+     <span class="signn" id="signn">  <li><a href="#"><i class="fa-solid fa-user"></i>Sign Up</a></li></span> 
+     <div class ="closemenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+            </span>
+        </ul>
+            </nav><!--Upper side ends-->
+<!--This is for popups--><section class="champ" id="champ">
+    <div class="popup" id="popup">
+        <h3>Your choice regarding cookies on this site</h3>
+        <br>
+      <p>  We use cookies to optimise site functionality and give you the best possible experience.</p>
+      <p> View our cookie policy.</p>  
+      <input type="submit" value="Accept" id="accept">
+      <span class="view"><input type="submit" value="Cookie Prefrencies" id="view"></span>
+    </div>
+    <section class="clickview" id="clickview">
+        <div class="viewing1">
+            <br><br>
+        <H2>This Site Uses Cookies</H2>
+       <br><p> Some of these cookies are essential, while others help us to improve your experience by</p> 
+       <p> providing insights into how the site is being used. Cookie Policy →</p>
+       <br><input type="submit" value="I Accept" id="iaccept">
+       <span class="reject" id="iaccept"><input type="submit" value="Reject All" id="reject"></span>
+       
+       <br><br>
+        </div>
+    <div class="viewing2">
+        <br><br>
+       <h2>Essential/Strictly Necessary Cookies</h2>
+        <br><p>Necessary cookies enable core functionality such as security, network management, and</p>
+       <p> accessibility. You may disable these by changing your browser settings, but this will affect</p>
+       <p> how the website functions and may stop the website functioning at all.</p><br><br>
+    </div>
+    <div class="viewing3">
+        <br><br>
+    <h2>Cookies</h2>
+    <br><p>Analytical cookies are used to understand how visitors interact with the website. These</p>
+    <p>cookies help provide information on metrics the number of visitors, bounce rate, traffic</p>
+    <P>source, etc.</P><br><br>
+    </div>
+    <div class="viewing3">
+        <br><br><h2>Marketing/Advertising Cookies</h2>
+        <br><p>Advertisement cookies are used to provide visitors with relevant ads and marketing</p>
+        <P>campaigns. These cookies track visitors across websites and collect information to provide</P>
+        <p>customized ads</p><br><br>
+    </div>
+    </section>
+    </section><!--Pop up ends-->
+<!--This is for signup form--><div class="second" id="second">
+    <div class ="shoutdown"><i class="fa fa-times"></i></div>
+            <section class="signupform" id="signupform" onsubmit="validateInputs();">
+            <form action="#" id="form">
+                <label for="First name">Full Name:
+              <input type="text" id="fullname" placeholder="enter full name" ></label>
+                    <label for="User Name">User Name:
+                     <input type="text" id="username" placeholder="enter User name" ></label>
+                        <label for="email">Email Adress:
+                        <input type="email" id="email" placeholder="enter Email Adress" ></label>
+                        <label for="Password">Password:
+                            <input type="password" id="password" placeholder="enter password" ></label>
+                            <label for="cPassword">Confirm Password:
+                                <input type="password" id="cpassword" placeholder="confrim password"></label>
+                                <span class="sbutton"><input type="submit" value="sign In" id="sbutton"></span>
+            </form>
+        </section><!--Signup form ends-->
+
+<!--This is for login form--> <div class="shutup"><i class="fa fa-times"></i></div>
+            <section class="loginform" id="loginform">
+            <form action="#" method="post" onsubmit="webinto();">
+                        <label for="email">Email Adress:
+                            <input type="email" id="Email" placeholder="enter Email Adress"></label>
+                        <label for="Password">Password:
+                            <input type="password" id="Password" placeholder="enter password"></label>
+                            <label for="cpassword">Confirm Password:
+                              <input type="password" id="Cpassword" placeholder="confrim password"></label>
+                                <span class="button"><input type="submit" value="Log In" id="button"></span>
+            </form>
+            </section>
+        </div><!--Login form Ends-->
+
+<!--This is for the page after signup or login-->
+<section class="afterbtn" id="afterbtn">
+                <div class="upnext" id="upnext">
+                    <section class="utitle" id="utitle">
+                        <h1>MORE MONEY <span>ENTERPRISE</span></h1></section>
+            <span class="motto"><h3>MOTTO:</h3><h4>We care about your Good look!!</h4></span>
+            </div>
+                   <div class="post-body">
+                        <h1>Hey! Take A look at our Gallery</h1>
+             <form action="" method="post">
+                    <input type="text" id="search-input" placeholder="search for images">
+                    <button id="search-button"> search</button>
+                </div>
+                </div>
+                <div class="search-results">
+                    <div class="search-result">
+                        <img src="https://images.unsplash.com/photo-1596362601603-b74f6ef166e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+                        alt="our Working Tools">
+                        <a href="https://unsplash.com/photos/Znyjl9pbaUs" target="_blank">our Working Tools</a>
+                    </div>
+                    </div>
+                    <div class="search-results">
+                        <div class="search-result">
+                            <img src="https://plus.unsplash.com/premium_photo-1661382022096-d652c06cf1be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmN1dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                            alt="Your Good look it's all we care">
+                            <a href="https://unsplash.com/photos/ZwJukeAZSRw" target="_blank">Your Good look it's all we care</a>
+                </form> 
+                </div>
+            </section><!--Page Ends here-->
+        
+
+            <script src="index.js"></script>
+
+</body>
+</html>
